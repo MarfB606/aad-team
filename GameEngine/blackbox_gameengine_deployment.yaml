@@ -63,11 +63,11 @@ spec:
             protocol: TCP
         env: 
           - name: "ConnectionStrings__GameEngineDB"
-            value: "Server=tcp:game-sqlserver.windows.net,1433;Initial Catalog=gamedb;Persist Security Info=False;User ID=gamedbadministrator;Password=herebepassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+            value: "Server=tcp:game-sqlserver-f03960.database.windows.net,1433;Initial Catalog=gamedb;Persist Security Info=False;User ID=gamedbadministrator;Password=Jx3pJtXs834RLrwL;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
           - name: "ARCADE_BACKENDURL"
             value: "http://gamebot/pick"
-#          - name: "APPINSIGHTS_INSTRUMENTATIONKEY"
-#            value: "00000000-0000-0000-0000-000000000000"            
+          - name: "APPINSIGHTS_INSTRUMENTATIONKEY"
+            value: "7595e724-e8a5-4686-b7ac-eaa031994197"            
       - name: istio-proxy
         image: ghcr.io/azure-adventure-day/azure-adventure-day-coach/gamedayengine-sidecar:latest
         imagePullPolicy: Always
